@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список товаров</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+            <h1 class="title container">Список товаров</h1>
+            <div class="search container">
+                  <label for="nameFilter">Фильтр по названию:</label>
+                <input type="text" id="nameFilter">  
+                  <label for="priceFilter">Фильтр по цене:</label>
+                <input type="text" id="priceFilter">  
+                  <label for="brandFilter">Фильтр по бренду:</label>
+                    <input type="text" id="brandFilter">  
+                <p class="search__btns">
+                  <button onclick="applyFilters()">Применить фильтры</button>
+                <button onclick="clearFilters()">Сбросить фильтры</button>  
+                </p>
+                
+            </div>
+            <div class="product__list container" id="product-list">
+                <!-- Сюда будут добавляться товары -->
+            </div>
+
+            <div class="pagination container" id="pagination">
+                <!-- Кнопки для перехода между страницами -->
+            </div>
+         
+    </div>
+    
+<script src="md5.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
